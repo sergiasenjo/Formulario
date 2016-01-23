@@ -159,7 +159,9 @@ function resetForm() {
     $("address").value = "";
     $("postal_code").value = "";
     $("comments").value = "";
-    $("form").removeChild($("errordiv"));
+    if($("form").children.length === 15) {
+        $("form").removeChild($("errordiv"));
+    }    
 }
 
 function events() {
