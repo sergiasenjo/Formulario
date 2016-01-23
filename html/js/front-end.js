@@ -77,27 +77,44 @@ function checkConditions() {
     return $("conditions").checked;
 }
 
-function checkCountry() {
-    var country = $("country").value;
-    if(country === "España") {
-        $("postal_code").style.display = "inline";
-    } else {
-        $("postal_code").style.backgroundColor = "white";
-        $("postal_code").style.display = "none";
-        $("postal_code").value = "";
-    }
-}
-
 function checkUrl() {
     var re = ns.URL_RE,
         url = $("url");
     return ns.checkPattern(re, url);
 }
 
+function checkAddress() {
+    if($("address").value === "") {
+        $("address").className = "white";
+    } else {
+        $("address").className = "green";
+    }
+}
+
+function checkCountry() {
+    var country = $("country").value;
+    if(country === "España") {
+        $("postal_code").style.display = "inline";
+    } else {
+        $("postal_code").className = "white";
+        $("postal_code").style.display = "none";
+        $("postal_code").value = "";
+    }
+    $("country").className = "green";
+}
+
 function checkPostalCode() {
     var re = ns.POSTALCODE_RE,
         postalcode = $("postal_code");
     return ns.checkPattern(re, postalcode);
+}
+
+function checkComments() {
+    if($("comments").value === "") {
+        $("comments").className = "white";
+    } else {
+        $("comments").className = "green";
+    }
 }
 
 function generateError() {
@@ -176,7 +193,9 @@ function events() {
     $("password_conf").addEventListener("keyup", checkPassConf, false);
     $("country").addEventListener("change", checkCountry, false);
     $("url").addEventListener("keyup", checkUrl, false);
+    $("address").addEventListener("keyup", checkAddress, false);
     $("postal_code").addEventListener("keyup", checkPostalCode, false);
+    $("comments").addEventListener("keyup", checkComments, false);
     $("send").addEventListener("click", checkFields, false);
     $("accept-cookies").addEventListener("click", rmMsgCookies, false);
 }
