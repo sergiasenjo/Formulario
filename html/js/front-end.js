@@ -115,7 +115,7 @@ function checkFields(e) {
     e.preventDefault();
     if(checkName() && checkEmail() && checkPass() && checkPassConf() && checkConditions()) {
         if(($("url").value !== "" && !checkUrl()) || ($("postal_code").value !== "" && !checkPostalCode())) {
-            ns.generateError();
+            generateError();
         } else {
             document.forms[1].submit();
         }
