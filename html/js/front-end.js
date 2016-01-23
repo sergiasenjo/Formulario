@@ -164,6 +164,10 @@ function resetForm() {
     }    
 }
 
+function rmMsgCookies() {
+    document.body.removeChild($("box-cookies"));
+}
+
 function events() {
     appendSelectCountry();
     $("full_name").addEventListener("keyup", checkName, false);
@@ -174,6 +178,7 @@ function events() {
     $("url").addEventListener("keyup", checkUrl, false);
     $("postal_code").addEventListener("keyup", checkPostalCode, false);
     $("send").addEventListener("click", checkFields, false);
+    $("accept-cookies").addEventListener("click", rmMsgCookies, false);
 }
 
 window.onload = events;

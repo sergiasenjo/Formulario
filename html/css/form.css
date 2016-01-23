@@ -1,3 +1,34 @@
+/* Mensaje de cookies */
+#box-cookies {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 999999;
+    display: block;
+}
+#info-cookies {
+    margin: auto;
+    position: relative;
+    top: 0px;
+    height: 58px;
+    width: 100%;
+    text-align:center;
+    background-color: #2D2D2D;
+}
+#info-cookies p {
+    line-height:58px;
+    font-size: 1em;
+    color: orange;
+    text-align:center;
+}
+#info-cookies p a {
+    margin-right:5px;
+    text-decoration: underline;
+}
+
+
+/* Formulario*/
 #login{
   width: 50%;
   margin:0 auto;
