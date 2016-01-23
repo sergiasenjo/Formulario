@@ -25,6 +25,7 @@
 #info-cookies p a {
     margin-right:5px;
     text-decoration: underline;
+    cursor: pointer;
 }
 
 
