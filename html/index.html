@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" >
+    <meta name=”description” content="Tienda online de drones y cursos">
+    <meta name=”keywords” content=”dron,drones,cursos”>
+    <meta name=”author” content=”Sergio”>
+    <link rel="icon" href="../html/favicon.png">
+    <link rel="stylesheet" type="text/css" href="../html/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../html/css/screen.css">
+    <link rel="stylesheet" type="text/css" href="../html/css/form.css">
+    <script src="../html/js/front-end.js"></script>
+    <title>SkyDrone</title>
+</head>
+
+<body>
+    <header>
+        <section class="bar dark">
+            <section class="grid center bar">
+                <section class="logo">
+                    <h1 class="white-font">SKY<span class="light blue-font">DRONE</span></h1>
+                </section>
+                <section class="msguser">
+                    <p class="blue-font">Bienvenido <span class="white-font">Sergio</span></p>
+                </section>
+                <figure class="user">
+                    <img src="../html/img/user.png" alt="user">
+                </figure>
+                <figure class="cart">
+                    <img class="center" src="../html/img/cart.png" alt="cart">
+                </figure>
+            </section>
+        </section>
+
+        <section class="bar dark-blue">
+            <section class="grid center">
+                <nav class="menu">
+                    <ul>
+                        <li>
+                          <a href="#">Drones</a>
+                        </li>
+                        <li>
+                          <a href="#">Cursos</a>
+                        </li>
+                        <li><a href="#">Ofertas</a></li>
+                        <li>
+                          <a href="#">Información</a>
+                        </li>
+                    </ul>
+                </nav>
+                <section class="search">
+                    <form>
+                        <input type="text" placeholder="             Buscar"/>
+                        <figure class="eye">
+                            <img class="center" src="../html/img/eye.png" alt="cart">
+                        </figure>
+                    </form>
+                </section>
+            </section>
+        </section>
+
+    </header>    
+
+    <section id="carousel">
+        <section class="grid center">
+            <figure class="drone">
+                <img src="../html/img/drone.png" alt="drone">
+            </figure>
+        </section>
+        <figure class="slide1"></figure>
+        <figure class="slide2"></figure>
+        <figure class="slide3"></figure>
+    </section>
+
+    <main>
+         <div id="login">
+            <div id="triangle"></div>
+            <h1>Formulario</h1>
+            <form id="form" action='register.php' method='POST'>
+                <label class="infoform"><img src="../html/img/asterisk.png"> Campos obligatorios</label>                
+                <input id="full_name" type="text" name="full_name" placeholder="Nombre y Apellidos" required />
+                <input id="email" type="email" name="email" placeholder="Correo electrónico" required />
+                <input id="password" type="password" name="password" placeholder="Contraseña de acceso" required />
+                <input id="password_conf" type="password" name="password_conf" placeholder="Confirmación de contraseña" required />
+                <input id="conditions" type="checkbox" name="conditions" required /> <label>Acepto las condiciones de uso</label>
+                                                                         <label><img src="../html/img/asterisk.png"></label>
+                <input id="url" type="text" name="url" placeholder="URL" />
+                <input id="address" type="text" name="address" placeholder="Dirección" />
+                <select id="country" name="country">
+                </select>
+                <input id="postal_code" type="text" name="postal_code" placeholder="Código Postal" />
+                <textarea id="comments" name="comments" placeholder="Comentarios"></textarea>
+                <button id="send" name="sendbtn">Enviar</button>
+            </form>
+        </div>
+    </main>
+
+    <footer class="dark">
+        <section class="grid center">
+            <section id="socialnetworks">
+                <ul>
+                    <li>
+                        <figure>
+                            <a href="#"><img src="../html/img/facebook.png" alt="facebook"></a>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <a href="#"><img src="../html/img/twitter.png" alt="twitter"></a>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <a href="#"><img src="../html/img/instagram.png" alt="instagram"></a>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <a href="#"><img src="../html/img/youtube.png" alt="youtube"></a>
+                        </figure>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="payments">
+                <section class="grid center">
+                    <p class="center white-font">Formas de pago</p>
+                    <ul>
+                        <li>
+                            <figure>
+                                <img src="../html/img/visa.png" alt="visa">
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="../html/img/mastercard.png" alt="mastercard">
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="../html/img/paypal.png" alt="paypal">
+                            </figure>
+                        </li>
+                    </ul>
+                </section>
+            </section>
+
+            <section id="legalwarning">
+                <section class="logosmall">
+                    <h1 class="white-font">SKY<span class="light blue-font">DRONE</span></h1>
+                </section>
+                <div id="copyright">
+                    <p class="white-font">2015. SkyDrone. Todos los derechos reservados.</p>
+                </div>
+                <div id="conditions">
+                    <ul>
+                        <li><a href="#">Condiciones de uso</a></li>
+                        <li><a href="#">Politica de privacidad</a></li>
+                    </ul>
+                </div>
+            </section>
+        </section>
+    </footer>
+</body>
+</html>

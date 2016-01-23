@@ -1,0 +1,17 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Sergio Asenjo Alcalde -- Web Designer
+
+# THANKS
+
+    Chema Alonso
+    Joao Marco
+    David Villaluenga
+    Francisco Javier Ruiz-Toledo    
+
+# TECHNOLOGY COLOPHON
+
+    CSS3, HTML5
